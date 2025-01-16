@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZiKEEM</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script defer src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -33,17 +35,17 @@
                 <ul class="nav_icon">
                     <li>
                         <a href="#">
-                            <img src="images/search.png" alt="검색">
+                            <img src="images/search.png" alt="검색하기">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="images/mypage.png" alt="마이페이지">
+                            <img src="images/mypage.png" alt="마이페이지로 이동">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="images/cart.png" alt="장바구니">
+                            <img src="images/cart.png" alt="장바구니로 이동">
                         </a>
                     </li>
                 </ul>
@@ -63,16 +65,94 @@
     </main>
 
     <section class="menu_list">
-        <ul>
-            <li><a href="#">COFFEE</a></li>
+
+        <ul class="menu_category">
+            <li class="select"><a href="#">COFFEE</a></li>
             <li><a href="#">FOOD</a></li>
             <li><a href="#">MD상품</a></li>
         </ul>
 
-        <ul>
-            <li><a href="#"></a></li>
-        </ul>
+        <div class="swiper mySwiper">
+            <ul class="coffee_category swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/caffeemoca.png" alt="카페모카">
+                    </a>
+                    <div class="caption">
+                        <div class="title">
+                            <div class="coffee_ko">카페모카</div>
+                            <div class="coffee_en">Caffe Mocha</div>
+                        </div>
+                        <a href="#">
+                            <img src="images/cart_black.png" alt="장바구니에 담기">
+                        </a>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/latte.png" alt="바닐라 카페라떼">
+                    </a>
+                    <div class="caption">
+                        <div class="title">
+                            <div class="coffee_ko">바닐라 카페라떼</div>
+                            <div class="coffee_en">Vanilla Caffe Latte</div>
+                        </div>
+                        <a href="#">
+                            <img src="images/cart_black.png" alt="장바구니에 담기">
+                        </a>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#" class="wide">
+                        <img src="images/americano.png" alt="아메리카노">
+                    </a>
+                    <div class="caption">
+                        <div class="title blank">
+                            <div class="coffee_ko">아메리카노</div>
+                            <div class="coffee_en">Americano</div>
+                        </div>
+                        <a href="#">
+                            <img src="images/cart_black.png" alt="장바구니에 담기">
+                        </a>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/coldbrew.png" alt="콜드브루">
+                    </a>
+                    <div class="caption">
+                        <div class="title">
+                            <div class="coffee_ko">콜드브루</div>
+                            <div class="coffee_en">Coldbrew</div>
+                        </div>
+                        <a href="#">
+                            <img src="images/cart_black.png" alt="장바구니에 담기">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- <ul class="food_category">
+                <li>
+                    <a href="#">
+
+                    </a>
+                </li>
+            </ul> -->
+        </div>
     </section>
+
+    <section class="store_search">
+        <div class="inner">
+            <h2>Store</h2>
+            <p>가까운 지킴 매장을 쉽고 빠르게 찾아보세요.</p>
+            <div class="store_caption">
+                <img src="images/search.png" alt="검색">
+                <input type="text">
+            </div>
+        </div>
+    </section>
+
 
     <footer></footer>
 </body>
